@@ -1,5 +1,5 @@
 <?php
-$nombre = fgets (STDIN);
+$nombre = readline("Entrez un nombre je vous en donnerais le carré : ");
 $Carre = $nombre * $nombre ;
 
-echo " La Carré est de : " . $Carre ;
+echo " La Carré de $nombre est de : " . $Carre ;

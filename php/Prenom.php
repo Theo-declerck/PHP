@@ -1,3 +1,3 @@
 <?php
-$prenom = fgets (STDIN);
+$prenom = readline("Quel est ton nom?: ");
 echo " Bonjour " . $prenom ;
