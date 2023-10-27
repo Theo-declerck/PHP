@@ -8,4 +8,3 @@ if (($Xa <0 & $Xb <0) or ($Xa >0 & $Xb >0) )
 
 else
     echo ("Votre produit est Négatif");
-    

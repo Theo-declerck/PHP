@@ -27,8 +27,3 @@ elseif ($XS == 59 & $XM = 59) {
     $XH = ($XH + 1);
     echo(" Il est $XH heures et $XM minutes et $XS secondes");
 }
-
-
-
-
- 

@@ -7,5 +7,3 @@ if ($X < 0)
 
 else
     echo ("Votre nombre est positif");
-    
-
