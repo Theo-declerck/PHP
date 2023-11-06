@@ -9,9 +9,9 @@ while ($w = true) {
     $w = false;
     for ($i = 1; $i <= 4; $i++) {
     
-        echo ("Manche $i" . "\n");
+        echo ("Partie $i" . "\n");
         for ($k = 1; $k <= 3; $k++) {
-            $utilisateur = readline("Partie $k : Choissisez : Pierre / Papier / Ciseaux ? ");
+            $utilisateur = readline("Manche $k : Choissisez : Pierre / Papier / Ciseaux ? ");
             $ia = rand(1, 3);  //1=Pierre  / 2=Papier / 3=Ciseaux //
 
 
@@ -48,20 +48,25 @@ while ($w = true) {
             } elseif (($ia == 3) and ($utilisateur == "Ciseaux") or ($utilisateur == "ciseaux")) {
                 echo ("L'ordinateur a choisi Ciseaux" . "\n");
                 echo ("Résultat: Partie null" . "\n");
+            }elseif (($utilisateur !="Papier") or ($utilisateur !="papier") or ($utilisateur !="Feuille") or ($utilisateur !="feuille") or ($utilisateur !="Ciseaux") or ($utilisateur !="ciseaux")){
+                echo ("Choix Invalide" ."\n");
             }
+            
         }
-        echo ("Score après la manche $i : Joueur ($p) - Ordinateur ($o)" . "\n");
+        echo ("Score après la manche 3 : Joueur ($p) - Ordinateur ($o)" . "\n");
         
         $file = "file.txt";
        
-        $fileopen = (fopen($file, 'w'));
+        $fileopen = (fopen($file, 'a'));
         
-        fwrite($fileopen, "Score après la manche $i : Joueur ($p) - Ordinateur ($o)" . "\n");
+        fwrite($fileopen, "Score après la manche 3 de la partie $i : Joueur ($p) - Ordinateur ($o)" . "\n");
 
         // Permet de rejouer //
         $on = readline("Voulez-vous rejouer ? (O/N) : ");
         if ($on == "O" or $on == "o") {
             $w = true;
+            $o=0;
+            $p=0;
         } else {
             $w = false;
             echo ("Au revoir et a bientôt ! ");

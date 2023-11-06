@@ -1,1 +1,2 @@
-Score après la manche 1 : Joueur (3) - Ordinateur (0)
+Score après la manche 3 de la partie 1 : Joueur (0) - Ordinateur (2)
+Score après la manche 3 de la partie 2 : Joueur (1) - Ordinateur (1)
